@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Sections/Navbar'
 import Hero from './Sections/Hero'
 import ServiceSummary from './Sections/ServiceSummary'
+import About from './Sections/About'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <ServiceSummary/>
+      <About/>
       <section id="home"className='min-h-screen'/>
       <section id="about"className='min-h-screen'/>
       </div>
