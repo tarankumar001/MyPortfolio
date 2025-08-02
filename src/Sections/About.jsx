@@ -1,9 +1,10 @@
 import { useRef } from "react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
-import AnimatedTextLines from "../components/AnimatedTextLines"; // ✅ default import
+import AnimatedTextLines  from "../components/AnimatedTextLines";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // 👈 make sure this comes BEFORE registerPlugin
+
 
 gsap.registerPlugin(ScrollTrigger);
 

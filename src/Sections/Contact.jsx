@@ -1,12 +1,21 @@
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap"; // Needed for gsap to work
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
-import Marquee from "../components/Marquee"; // Assuming you're using this
+import Marquee from "../components/Marquee";
 import { socials } from "../constants";
+import gsap from "gsap";
 
 const Contact = () => {
-  const text = "Got a question, how or project idea? We'd love to hear from you and discuss further!";
-  const items = ["just imaggin ,I code", "just imaggin ,I code", "just imaggin ,I code", "just imaggin ,I code", "just imaggin ,I code"];
+  const text = "Shoot your shot — a message, a collab idea, or just a meme. I'm listening.";
+
+  const items = [
+  "building cool stuff since… 2AM last night",
+  "your idea + my code = 🔥",
+  "just out here breaking and fixing things",
+  "making pixels dance and servers cry",
+  "if it compiles, I ship it 🤷‍♂️",
+  "debugging my life one console.log at a time",
+];
+
 
   useGSAP(() => {
     gsap.from(".social-link", {
@@ -25,7 +34,7 @@ const Contact = () => {
     <section id="contact" className="flex flex-col justify-between min-h-screen bg-black">
       <div>
         <AnimatedHeaderSection
-          subTitle={"You dream it, I code it"}
+s         subTitle={"Throw me an idea, I’ll slap some code on it 😎"}
           title={"Contact"}
           text={text}
           textColor={"text-white"}

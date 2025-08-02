@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./sections/Navbar";
-import Hero from "./sections/Hero";
-import ServiceSummary from "./sections/ServiceSummary";
-import About from "./sections/About";
-import Works from "./sections/Works";
-import ContactSummary from "./sections/ContactSummary";
-import Contact from "./sections/Contact";
+import Navbar from "./Sections/Navbar";
+import Hero from "./Sections/Hero";
+import ServiceSummary from "./Sections/ServiceSummary";
+import About from "./Sections/About";
+import Works from "./Sections/Works";
+import ContactSummary from "./Sections/ContactSummary";
+import Contact from "./Sections/Contact";
 import { useProgress } from "@react-three/drei";
 
 const App = () => {

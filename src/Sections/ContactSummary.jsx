@@ -1,15 +1,30 @@
 import { useRef } from "react";
 import Marquee from "../components/Marquee";
 import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // 👈 make sure this comes BEFORE registerPlugin
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ContactSummary = () => {
   const containerRef = useRef(null);
-  const items = ["Innovation", "Precision", "Trust", "Collaboration", "Excellence"];
-  const items2 = ["contact me", "contact me", "contact me", "contact me", "contact me"];
+  const items = [
+  "dude I swear this code just gaslit me 💀",
+  "been staring at this bug like it owes me money",
+  "coffee: 1, sleep: 0 ☕",
+  "bro I just pushed and prayed 🙏",
+  "lowkey might rename this repo to 'chaos-v2'",
+];
+
+ const items2 = [
+  "yo, hit me up 👋",
+  "slide into the DMs 📩",
+  "let’s make something cool 🧠",
+  "got ideas? let’s chat 💬",
+  "don’t be shy, say hi 👀",
+];
+
 
   useGSAP(() => {
     gsap.to(containerRef.current, {

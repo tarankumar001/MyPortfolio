@@ -1,7 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-// make sure this import exists
 
 gsap.registerPlugin(ScrollTrigger);
 

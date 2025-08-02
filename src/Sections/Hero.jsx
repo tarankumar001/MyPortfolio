@@ -1,11 +1,13 @@
+import { Canvas } from "@react-three/fiber";
+import { Planet } from "../components/Planet";
+import { Environment, Float, Lightformer } from "@react-three/drei";
+import { useMediaQuery } from "react-responsive";
+import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
+import AnimatedTextLines from "../components/AnimatedTextLines"; // ← also needed
 import { useRef } from "react";
-import AnimatedTextLines from "../components/AnimatedTextLines";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Planet } from "../components/Planet";
-import { Canvas } from "@react-three/fiber"; // ✅ You forgot to import this
-import { Environment, Lightformer ,Float} from "@react-three/drei";
-import { useMediaQuery } from 'react-responsive'; // ✅ Environment was used but not imported
+
 
 const Hero = () => {
   const contextRef = useRef(null);
