@@ -84,7 +84,7 @@ export const projects = [
     description:
       "AI-powered interview prep platform built with Next.js and TypeScript. Practice coding interviews with real-time feedback.",
     href: "https://github.com/tarankumar001/EchoHire",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    image: "/assets/projects/echohire.jpeg",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "Next.js" },
@@ -155,7 +155,7 @@ export const projects = [
     description:
       "Your personal portfolio site built using React and Vite, showcasing projects, skills, and contact details.",
     href: "https://github.com/tarankumar001/MyPortfolio",
-    image: "/assets/projects/game-store.jpg",
+    image: "/assets/projects/portfolio.png",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "React" },
